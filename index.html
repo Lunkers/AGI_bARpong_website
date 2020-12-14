@@ -37,7 +37,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="nav-scroll">
       <a class="navbar-brand" href="#">bARpong</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +45,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#goals">Goals</a>
@@ -69,7 +69,7 @@
     </nav>
   </header>
 
-  <main role="main">
+  <main role="main" data-spy="scroll" data-target="#nav-scroll" data-offset="0">
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- <ol class="carousel-indicators">
@@ -133,8 +133,8 @@
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">Accurate physics. <span class="text-muted">Simulated in real time.</span></h2>
-          <p class="lead">Making use of Unity's new data-oriented tech stack, we can simulate realistic physics for all
-            objects in the game.</p>
+          <p class="lead">Making use of Unity's new data-oriented tech stack, we can simulate realistic physics and
+            collisions. The ball behaves just as it does in real life.</p>
         </div>
         <div class="col-md-5 order-md-1">
           <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
@@ -148,7 +148,7 @@
 
       <hr class="featurette-divider" id="goals">
 
-      <div >
+      <div>
         <h2>Project goals</h2>
         <h3>The concept</h3>
         <p>Our goal for bARpong were to create an engaging implementation of beer pong in Augmented Reality (AR). When
@@ -167,7 +167,7 @@
 
       <hr class="featurette-divider" id="the-team">
 
-      <div class="team-container" >
+      <div class="team-container">
         <h2>The team</h2>
         <h3>These are the people behind bARpong, and what they've done.</h3>
         <div class="picture-list-container">
@@ -179,7 +179,7 @@
           <div class="member-container">
             <h4 class="member-name">Hannes Bennet</h4>
             <img class="member-picture" src="hannes.jpg" />
-            <p class="member-work">Modeling, materials, Audio programming, Colission detection, Networking, Android
+            <p class="member-work">Modeling, materials, Audio programming, Collision detection, Networking, Android
               testing</p>
           </div>
           <div class="member-container">
@@ -190,12 +190,12 @@
           <div class="member-container">
             <h4 class="member-name">Mattias Larsson</h4>
             <img class="member-picture" src="mattias.png" />
-            <p class="member-work">UI, networking, game state management, Android testing</p>
+            <p class="member-work">User interface, networking, game state management, game design, Android testing</p>
           </div>
         </div>
       </div>
       <hr class="featurette-divider" id="challenges">
-      <div >
+      <div>
         <h2>Challenges and obstacles</h2>
         <h3>Multiplayer</h3>
         <p>At the start, we set out to eventually make bARpong a multiplayer game. To simplify development, we decided
@@ -213,7 +213,7 @@
           and took more time than expected.</p>
       </div>
       <hr class="featurette-divider" id="lessons">
-      <div >
+      <div>
         <h2>Lessons learned</h2>
         <p>Through the course of this project, we've learned quite a lot, about many different things.
           We've learned how to develop Augmented reality applications in Unity using AR Foundation, using the
