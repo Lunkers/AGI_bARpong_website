@@ -1,0 +1,19 @@
+.member-picture {
+    max-width: 100%;
+    grid-row: 1/2;
+    grid-column: 1;
+}
+
+.member-container {
+    max-width: 25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.picture-list-container {
+    display: flex;
+}
+
+.member-name {
+    text-align: center;
+}

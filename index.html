@@ -1,195 +1,247 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>bARpong</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>bARpong</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./barpong.css">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Carousel</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-</header> -->
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">bARpong</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#goals">Goals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#the-team">The team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#challenges">Challenges and obstacles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lessons" tabindex="-1" aria-disabled="true">Lessons learned</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+  </header>
 
-<main role="main">
+  <main role="main">
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- <ol class="carousel-indicators">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol> -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-left">
-            <h1>bARpong.</h1>
-            <p>When you can't play beer pong for real, try it in augmented reality!</p>
-            <p><a class="btn btn-lg btn-primary" href="https://github.com/Lunkers/AGI_Group7_bARpong" role="button">Github</a></p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>bARpong.</h1>
+              <p>When the state of the world won't let you play beer pong with friends, try it in augmented reality!</p>
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Lunkers/AGI_Group7_bARpong"
+                  role="button">Github</a></p>
+            </div>
           </div>
         </div>
+
       </div>
-      <!-- <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-right">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-          </div>
-        </div>
-      </div> -->
+
     </div>
-    <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a> -->
-  </div>
 
 
-  <!-- Marketing messaging and featurettes
+    <!-- Marketing messaging and featurettes
   ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <!-- <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Simulated physics</h2>
-        <p>Everything is simulated, using Unity's state of the art data-oriented tech stack.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> 
-      </div> /.col-lg-4 
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Play anywhere in AR</h2>
-        <p>Built with AR Foundation, bARpong lets you play your favorite beer-related cup and ball game anywhere you want, on both Android and iOS.</p>
-         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> 
-      </div>/.col-lg-4
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div>/.col-lg-4
-    </div>/.row -->
+    <div class="container marketing">
 
 
-    <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Play anywhere in AR. <span class="text-muted">On both Android and iOS.</span></h2>
-        <p class="lead">Built with AR Foundation, bARpong lets you play your favorite beer-related cup and ball game anywhere you want, on both Android and iOS.</p>
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Play anywhere in AR. <span class="text-muted">On both Android and iOS.</span>
+          </h2>
+          <p class="lead">Built with AR Foundation, bARpong lets you play your favorite beer-related cup and ball game
+            anywhere you want, on both Android and iOS.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+            role="img" aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+        </div>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Accurate physics. <span class="text-muted">Simulated in real time.</span></h2>
+          <p class="lead">Making use of Unity's new data-oriented tech stack, we can simulate realistic physics for all
+            objects in the game.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+            role="img" aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+        </div>
       </div>
-    </div>
 
-    <hr class="featurette-divider">
+      <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Accurate physics. <span class="text-muted">Simulated in real time.</span></h2>
-        <p class="lead">Making use of </p>
+      <div id="goals">
+        <h2>Project goals</h2>
+        <h3>The concept</h3>
+        <p>Our goal for bARpong were to create an engaging implementation of beer pong in Augmented Reality (AR). When
+          the
+          covid-19 pandemic prevented us from playing the real thing with our friends, we wanted to create a version
+          that could be played without the risk of getting sick. The fact that there's no mess in AR is just a bonus.
+        </p>
+        <h3>The technology</h3>
+        <p>The main technical aspects of the project are the AR graphics and the physics simulations. The lighting of
+          the AR scene changes depending on the light around you in the real world, and on iOS devices, the AR content
+          gets occluded by people passing by.
+          The physics are simulated in real-time, which enables realistic interactions between the ball, table, and
+          cups.
+        </p>
       </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      <hr class="featurette-divider">
+
+      <div class="team-container" id="the-team">
+        <h2>The team</h2>
+        <h3>These are the people behind bARpong, and what they've done.</h3>
+        <div class="picture-list-container">
+          <div class="member-container">
+            <h4 class="member-name">Fredrik Lundkvist</h4>
+            <img class="member-picture" src="fredrik.jpg" />
+            <p class="member-work">Shaders, physics, AR onboarding, light estimation, project management.</p>
+          </div>
+          <div class="member-container">
+            <h4 class="member-name">Hannes Bennet</h4>
+            <img class="member-picture" src="hannes.jpg" />
+            <p class="member-work">Modeling, materials, Audio programming, Colission detection, Networking, Android
+              testing</p>
+          </div>
+          <div class="member-container">
+            <h4 class="member-name">Jesper Lundqvist</h4>
+            <img class="member-picture" src="jesper.jpg" />
+            <p class="member-work">Mobile interactions, AR graphics, iOS testing, visual effects.</p>
+          </div>
+          <div class="member-container">
+            <h4 class="member-name">Mattias Larsson</h4>
+            <img class="member-picture" src="mattias.png" />
+            <p class="member-work">UI, networking, game state management, Android testing</p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Third point. <span class="text-muted">Super cool.</span></h2>
-        <p class="lead">Holy shit bro, this project is pretty dang cool. I love bARpong</p>
+      <hr class="featurette-divider">
+      <div id="challenges">
+        <h2>Challenges and obstacles</h2>
+        <h3>Multiplayer</h3>
+        <p>At the start, we set out to eventually make bARpong a multiplayer game. To simplify development, we decided
+          to begin with a singleplayer implementation, and add online multiplayer when the core game was done.
+          Unfortunately, adding networking turned out to be a much bigger task than we had expected, and we decided to
+          use the little time we had left to polish the singleplayer experience instead.</p>
+        <h3>Data-oriented tech stack</h3>
+        <p>As with any mobile game, we knew that performance would be critical for this project; no matter how good a
+          game is, playing at 15fps is never fun. Because of this, we decided to use Unity's <a
+            href="https://unity.com/dots">Data-oriented technology
+            stack</a>, due to promises of better thread utilisation leading to better performance on weaker devices.
+          sadly, this technology was much less mature than we were led to believe from our exploration. This meant that
+          many things, such as audio systems and framrate-independent physics, became much harder to implement than they
+          would have been using the standard way of working in unity (and also required a new way of thinking from us),
+          and took more time than expected.</p>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      <hr class="featurette-divider">
+      <div id="lessons">
+        <h2>Lessons learned</h2>
+        <p>Through the course of this project, we've learned quite a lot, about many different things.
+          We've learned how to develop Augmented reality applications in Unity using AR Foundation, using the
+          data-oriented tech stack for simulating physics, designing and programming mobile interactions, shader
+          programming, networking, and advanced AR techniques such as light estimation and reflection probing.
+
+          And that's just the tip of the iceberg!
+
+          We've also learned some non-technical things, mostly related to managing and planning software projects; we've
+          gotten hands-on experience with agile development methods, user testing, and iterative development.
+        </p>
       </div>
-    </div>
+      <!-- /END THE FEATURETTES -->
 
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
+    </div><!-- /.container -->
 
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2020-2020 Fredrik Lundkvist, Hannes Bennet, Jesper Lundqvist, Mattias Larsson . &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
-</main>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020-2020 Fredrik Lundkvist, Hannes Bennet, Jesper Lundqvist, Mattias Larsson . &middot; <a
+          href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
