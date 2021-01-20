@@ -23,3 +23,13 @@
     display: block;
     object-fit: cover;
 }
+.contact-info {
+    font-size: large;
+    color: black;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
